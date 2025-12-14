@@ -414,6 +414,7 @@ h2 {
   margin: 0 0 16px;
   color: var(--muted);
   line-height: 1.6;
+  white-space: pre-line;
 }
 
 .result,
