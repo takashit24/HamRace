@@ -153,8 +153,10 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-start;
+  gap: 6px;
   position: relative;
-  padding: 0 0 4px;
+  padding: 0 0 2px;
   z-index: 1;
 }
 
@@ -165,8 +167,8 @@ h1 {
   display: grid;
   place-items: center;
   filter: drop-shadow(0 20px 24px rgba(255, 134, 180, 0.12));
-  margin-top: -12px;
-  margin-bottom: -18px;
+  margin-top: -8px;
+  margin-bottom: -36px;
 }
 
 .wheel {
@@ -293,7 +295,8 @@ h1 {
 .meters {
   display: grid;
   gap: 6px;
-  padding: 0 10px 2px;
+  padding: 0 8px 2px;
+  margin-top: -26px;
   z-index: 1;
 }
 
