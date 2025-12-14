@@ -349,8 +349,7 @@ h1 {
 }
 
 .tap-zone .tap-main {
-  font-size: clamp(22px, 5vw, 30px);
-  text-shadow: 0 8px 18px rgba(0, 0, 0, 0.4);
+  display: none;
 }
 
 .tap-zone .tap-sub {
