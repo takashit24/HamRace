@@ -16,7 +16,7 @@
         <p class="eyebrow">ほこたん</p>
         <h1>回し車ダッシュ</h1>
       </div>
-      <div class="stats">
+      <div class="stats stacked">
         <div class="stat">
           <span class="label">SCORE</span>
           <span class="value" id="scoreValue">0</span>
@@ -31,7 +31,6 @@
 
     <main class="arena" aria-live="polite">
       <div class="timing-chip" id="timingChip">GOOD!</div>
-      <div class="hero-callout">TAP / CLICK</div>
       <div class="wheel-stage" aria-label="回し車で走るほこたん">
         <div class="wheel" id="wheelDisplay">
           <img id="wheelImage" alt="回し車の画像">
@@ -48,13 +47,13 @@
           <div class="fill" id="heatFill"></div>
         </div>
       </section>
+      <section class="tap-block">
+        <button class="tap-zone" id="tapZone" type="button" aria-label="タップでスピードアップ">
+          TAP / CLICK
+          <div class="tap-pulse" id="tapPulse"></div>
+        </button>
+      </section>
     </main>
-
-    <button class="tap-zone" id="tapZone" type="button" aria-label="全画面タップでスピードアップ">
-      <span class="tap-main"></span>
-      <span class="tap-sub"></span>
-      <div class="tap-pulse" id="tapPulse"></div>
-    </button>
   </div>
 
   <div class="overlay is-visible" id="overlay" role="dialog" aria-modal="true">
