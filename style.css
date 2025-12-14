@@ -41,7 +41,7 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  padding: 12px 14px 14px;
+  padding: 10px 12px 10px;
   background: linear-gradient(180deg, var(--bg) 0%, var(--bg-2) 100%);
   overflow: hidden;
   box-shadow: 0 10px 28px rgba(0,0,0,0.05);
@@ -153,18 +153,19 @@ h1 {
   display: grid;
   place-items: center;
   position: relative;
-  padding: 6px 0;
+  padding: 0;
   z-index: 1;
 }
 
 .wheel-stage {
   position: relative;
-  width: min(78vw, 360px);
+  width: min(75vw, 320px);
   aspect-ratio: 1 / 1;
   display: grid;
   place-items: center;
   filter: drop-shadow(0 20px 24px rgba(255, 134, 180, 0.12));
-  margin-top: -12px;
+  margin-top: -22px;
+  margin-bottom: -12px;
 }
 
 .wheel {
@@ -291,7 +292,7 @@ h1 {
 .meters {
   display: grid;
   gap: 6px;
-  padding: 4px 14px 12px;
+  padding: 0 12px 8px;
   z-index: 1;
 }
 
