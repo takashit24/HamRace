@@ -204,7 +204,7 @@
 
   function showReady() {
     elements.overlayTitle.textContent = "ほこたん回し車ダッシュ";
-    elements.overlayMessage.textContent = "タイミングよくタップして回転スピードアップ。スピードが速すぎるオーバーヒートでゲームオーバー！";
+    elements.overlayMessage.textContent = "タイミングよくタップして\n回転スピードアップ。\nスピードが速すぎると\nオーバーヒートでゲームオーバー";
     elements.startBtn.textContent = "ゲームスタート";
     elements.overlay.classList.add("is-visible");
     elements.resultLine.hidden = true;
