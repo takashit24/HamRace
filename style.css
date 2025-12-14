@@ -297,6 +297,9 @@ h1 {
   gap: 6px;
   padding: 0 12px 4px;
   margin-top: 0;
+  width: 100%;
+  max-width: 520px;
+  align-self: stretch;
   z-index: 1;
 }
 
