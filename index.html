@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>ほこたん回し車ダッシュ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <header class="hud">
+      <div class="title-wrap">
+        <p class="eyebrow">ほこたん</p>
+        <h1>回し車ダッシュ</h1>
+      </div>
+      <div class="stats">
+        <div class="stat">
+          <span class="label">SCORE</span>
+          <span class="value" id="scoreValue">0</span>
+        </div>
+        <div class="stat">
+          <span class="label">BEST</span>
+          <span class="value" id="bestValue">0</span>
+          <span class="badge" id="bestBadge" aria-hidden="true">NEW!</span>
+        </div>
+      </div>
+    </header>
+
+    <main class="arena" aria-live="polite">
+      <div class="timing-chip" id="timingChip">GOOD!</div>
+      <div class="wheel-stage" aria-label="回し車で走るほこたん">
+        <div class="wheel" id="wheelDisplay">
+          <img id="wheelImage" alt="回し車の画像">
+          <div class="fallback wheel-fallback">回</div>
+        </div>
+        <div class="hamster" id="hamsterDisplay">
+          <img id="hamsterImage" alt="ほこたんの画像">
+          <div class="fallback hamster-fallback">ほこたん</div>
+        </div>
+      </div>
+    </main>
+
+    <section class="meters">
+      <div class="overheat-label">体力</div>
+      <div class="bar">
+        <div class="fill" id="heatFill"></div>
+      </div>
+    </section>
+
+    <button class="tap-zone" id="tapZone" type="button" aria-label="全画面タップでスピードアップ">
+      <span class="tap-main">TAP / CLICK</span>
+      <span class="tap-sub">スペースキーでもOK</span>
+      <div class="tap-pulse" id="tapPulse"></div>
+    </button>
+  </div>
+
+  <div class="overlay is-visible" id="overlay" role="dialog" aria-modal="true">
+    <div class="card" id="overlayCard">
+      <p class="o-eyebrow">ほこたんの体力に注意</p>
+      <h2 id="overlayTitle">ほこたん回し車ダッシュ</h2>
+      <p class="o-message" id="overlayMessage">
+        タイミングよくタップして回転スピードアップ。スピードが高すぎるとオーバーヒートでゲームオーバー！
+      </p>
+      <p class="result" id="resultLine" hidden>Score <span id="lastScore">0</span></p>
+      <p class="record" id="recordBadge" hidden>NEW RECORD!</p>
+      <button type="button" id="startBtn" class="primary-btn">ゲームスタート</button>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
